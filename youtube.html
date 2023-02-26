@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube.com Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="styles/icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="styles/icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search" />
+      <button class="search-button">
+        <img class="search-icon" src="styles/icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="styles/icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="styles/icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+
+      <div class="youtube-apps-button">
+        <img class="youtube-apps-icon" src="styles/icons/youtube-apps.svg">
+        <div class="tooltip">Youtube apps</div>
+      </div>
+
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="styles/icons/notifications.svg">
+        <div class="notifications-count">6</div>
+      </div>
+        <img class="user-picture" src="channel-picture/unnamed.jpg">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/">
+        <img src="styles/icons/home.svg">
+      </a>
+      <!-- <img src="styles/icons/home.svg"> -->
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl">
+        <img src="styles/icons/explore.svg">
+      </a>
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/feed/subscriptions">
+        <img src="styles/icons/subscriptions.svg">
+      </a>
+      <div>Subcriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/feed/history">
+        <img src="styles/icons/rc.jpeg">
+      </a>
+      <div>History</div>
+    </div>
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ">
+        <img src="styles/icons/youtube-music.svg">
+      </a>
+      <div>Music</div>
+    </div>
+    <div class="sidebar-link">
+      <a href="https://www.youtube.com/feed/library">
+        <img src="styles/icons/library.svg">
+      </a>
+      <div>Library</div>
+    </div>
+
+  </div>
+
+  <div class="video-grid">
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+        </a>
+        <div class="video-time">14:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@mkbhd">
+          <img class="profile-picture" src="channel-picture/channel-1.jpeg">
+        </a>
+          <div class="tooltip">16.7M subcribes</div>
+        </div>
+
+        <div class="video-info">
+
+          <a class="video-title" href="https://www.youtube.com/watch?v=n2RNcPRtAiY" style="text-decoration: none">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+          </a>
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+
+          <p class="video-stats">
+            3.4M views &#183; 1 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--If an elemement like this ..."video-preview" is written below
+        another element like the class "header"
+        the element written below is appear in front
+        =>We have header and then below that we have the thumbnail which is
+        going to appear on top of the header
+        -->
+    <!--
+            Because the thumbnail row is postion: relative;
+            and it's written below the class "header" in the code.
+            It's going to appear on top of the header which is what we see 
+        => Include z-index in css file
+        -->
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=9vtEaaiNDE0">
+          <img class="thumbnail" src="thumbnails/hq720.webp">
+        </a>
+        <div class="video-time">11:59:50</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@SoulHealingMusica">
+            <img class="profile-picture" src="channel-picture/channel-4.1.jpeg">
+          </a>
+  
+          <div class="tooltip">273K subcribes</div>
+        </div>
+
+        <div class="video-info">
+          <a class="video-title" href="https://www.youtube.com/watch?v=9vtEaaiNDE0" style="text-decoration: none">
+            <p class="video-title">
+              Fall asleep in less than 3 MINUTES | Restoration of Body and Mind
+            </p>
+          </a>
+          <p class="video-author">
+            Soul Healing Música
+          </p>
+          <p class="video-stats">9.7M views &#183; 1 year ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=bHWO0_m7ihM" style="text-decoration: none;">
+          <img class="thumbnail" src="thumbnails/hqdefault.webp">
+        </a>
+        <div class="video-time">3:16:15</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@RelaxingSleepDeepHealing">
+            <img class="profile-picture" src="channel-picture/channels4_profile.jpeg">
+          </a>
+          
+          <div class="tooltip">50.8K subcribes</div>
+        </div>
+        <div class="video-info">
+          <a class="video-title" href="https://www.youtube.com/watch?v=bHWO0_m7ihM" style="text-decoration: none">
+            <p class="video-title">
+              Revitalize Your Mind, Body and Spirit: A Journey to Inner Peace and Healing Through Meditation
+            </p>
+          </a>
+          <p class="video-author">
+            Relaxing Sleep & Deep Healing
+          </p>
+          <p class="video-stats">
+            2.4K views &#183; 2 weeks ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+        </a>
+        <div class="video-time">6:31:23</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@SuperSimpleDev">
+            <img class="profile-picture" src="channel-picture/channel-4.jpeg">
+          </a>
+          
+          <div class="tooltip">144K subcribes</div>
+        </div>
+        <div class="video-info">
+          <a class="video-title" href="https://www.youtube.com/watch?v=G3e-cpL7ofc" style="text-decoration: none">
+            <p class="video-title">
+              HTML & CSS Full Course &#8722; Beginner to Pro
+            </p>
+          </a>
+          <p class="video-author">
+            SuperSimpleDev
+          </p>
+
+          <p class="video-stats">
+            3.4M views &#183; 1 year ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=ZyOvxPHeCew">
+          <img class="thumbnail" src="thumbnails/thum-5.webp">
+        </a>
+        <div class="video-time">8:27</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@AboveFirstClass">
+          <img class="profile-picture" src="channel-picture/channel-5.jpg">
+          </a>
+          <div class="tooltip">10.7K subcribes</div>
+        </div>
+        <div class="video-info">
+          <a class="video-title" href="https://www.youtube.com/watch?v=ZyOvxPHeCew" style="text-decoration: none">
+            <p class="video-title">
+              Top 5 Most Popular Audemars Piguet Watches 2022
+            </p>
+          </a>
+          <p class="video-author">
+            Above First Class
+          </p>
+
+          <p class="video-stats">
+            19K views &#183; 11 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="video-preview">
+      <!--div-division is a contain box-->
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=5MuIMqhT8DM">
+          <img class="thumbnail" src="thumbnails/thum-6.webp">
+        </a>
+
+        <div class="video-time">19:19</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@TED">
+            <img class="profile-picture" src="channel-picture/channel-6.jpg">
+          </a>
+          
+          <div class="tooltip">22.6M subcribes</div>
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Sleep is your superpower | Matt Walker
+          </p>
+          <p class="video-author">
+            TED
+          </p>
+
+          <p class="video-stats">
+            9.8M views &#183; 3 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="video-preview">
+    <div>
+        <img class="thumbnail" src="thumbnails/hq720.webp"> 
+    </div>
+    <div>
+        
+        <p class="video-title">
+            Fall asleep in less than 3 MINUTES | 
+             Restoration of Body and Mind
+         </p>
+     
+         <p class="video-author">
+             Relaxing Sleep & Deep Healing
+         </p>
+     
+         <P class="video-stats">
+             786K views &#183; Streamed 2 months ago
+         </P>
+    </div>
+</div> -->
+</body>
+
+</html>

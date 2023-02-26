@@ -1,0 +1,125 @@
+.thumbnail {
+    width: 100%;
+  /* object-fit: contain;
+    object-position: bottom;
+    border: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+  /* display: block; --because of using width:100% so it all in
+  one line*/
+}
+
+/*CSS syntax the "," using display
+ to both author &stats
+ .video-author,
+ .video-stats {
+    display: inline-block;
+ }*/
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.video-info-grid {
+   display: grid; 
+   grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 36px;
+  margin-top: -40px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-grid {
+  font-family: Roboto, Arial;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  column-gap: 16px;
+  row-gap: 40px;
+  /*text-decoration: underline;*/ /*..
+  CSS Inheritance mostly just work with text decoration, 
+  underline, color font weight and font family
+  =>all of text in video grid get underline
+
+  >< no affect border, padding or margin
+  */
+  /* border: 2px solid red; */
+}
+
+.video-link:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  /* padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px; */
+  /*..
+  css shorthand to reduce line of code. 
+  The first value is vertical paddinng: top&bottom
+  The second is horizontal padding: left&right
+  */
+  padding: 4px; /*first, right, bottom, and left*/
+  /* margin: 4px 10px 20px 30px; */
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+/* .channel-picture {
+  width: 50px;
+  vertical-align: top;
+  box-sizing: border-box;
+} */
+
+/* .video-info {
+  display: inline-block;
+  width: 245px; 
+  
+} */
+
